@@ -12,10 +12,10 @@ const Cursor = () => {
       outerSize={30}
       color="0, 192, 255"
       outerAlpha={0}
-      innerScale={10}
+      innerScale={13}
       outerScale={0}
       innerStyle={{
-        opacity: "0.3",
+        backgroundColor: "rgb(0, 192, 255 , .4)",
       }}
       outerStyle={{
         border: `2px solid ${THEME.colors.extraText}`,

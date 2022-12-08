@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/header/header";
+import Contact from "../components/sections/contact/contact";
 import Hero from "../components/sections/hero/hero";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Header />
         <Hero />
+        <Contact />
       </main>
     </>
   );

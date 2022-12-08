@@ -43,7 +43,7 @@ const Header = () => {
                   <Link href="#">Portfolio</Link>
                 </li>
                 <li className="nav_menu_item">
-                  <Link href="#">Contact</Link>
+                  <Link href="#contact">Contact</Link>
                 </li>
               </ul>
             </nav>

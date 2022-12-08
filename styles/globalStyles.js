@@ -14,6 +14,8 @@ const GlobalStyles = createGlobalStyle`
 
 html, body {
   height: 100%;
+  transition: all .3s ease;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,11 +23,11 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-image: url("https://marketifythemes.net/html/foliox//img/hero/1.jpg");
-  width: 100%;
+  /* width: 100%;
   height: auto;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: ${THEME.colors.white};
   cursor: auto !important;
 
@@ -65,7 +67,7 @@ a{
 
 .btn{
   font-family: ${THEME.fonts.OpenSans};
-  color: #fff;
+  color: ${THEME.colors.white};
   display: inline-block;
   background-color: ${THEME.colors.extraText};
   padding: 18px 43px;
@@ -73,11 +75,15 @@ a{
   overflow: hidden;
   position: relative;
   transition: all .3s ease;
+  border: none;
+  outline: none;
+  font-weight: ${THEME.fontWeight.weightMedium};
 
   span{
     position: relative;
     z-index: 2;
     transition: all .3s ease;
+    font-family: ${THEME.fonts.OpenSans};
   }
   &::before{
     position: absolute;
@@ -86,7 +92,7 @@ a{
     right: -10px;
     bottom: -10px;
     top: -10px;
-    background-color: #fff;
+    background-color: ${THEME.colors.white};
     transform: translateY(100%);
     transition: all .3s ease;
   }
@@ -95,9 +101,18 @@ a{
   }
  &:hover{
   span{
-    color: #000;
+    color: ${THEME.colors.black};
   }
  } 
+}
+
+
+/* Description */
+
+.description{
+font: normal ${THEME.fontWeight.weightNormal} 16px ${THEME.fonts.OpenSans};
+color: ${THEME.colors.mainColor};
+
 }
 `;
 
