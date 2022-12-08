@@ -25,7 +25,7 @@ const Contact = () => {
 
               <div className="text">
                 <StyledH3>Address</StyledH3>
-                <p className="description">20, Somewhere in world</p>
+                <p className="description">Tangail , Dhaka , Bangladesh</p>
               </div>
             </div>
             {/* Email */}
@@ -37,7 +37,7 @@ const Contact = () => {
               <div className="text">
                 <StyledH3>Email</StyledH3>
                 <Link className="description" href="/">
-                  hello@dodo.com
+                  sakilahmed.dev@gmail.com
                 </Link>
               </div>
             </div>
@@ -49,7 +49,7 @@ const Contact = () => {
 
               <div className="text">
                 <StyledH3>Phone</StyledH3>
-                <p className="description">+123 456 7890</p>
+                <p className="description">+880 1729-925644</p>
               </div>
             </div>
           </div>

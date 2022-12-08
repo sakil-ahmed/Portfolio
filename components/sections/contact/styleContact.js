@@ -45,6 +45,9 @@ const StyleContact = styled.section`
           height: 88px;
         }
       }
+      .description {
+        font-weight: ${THEME.fontWeight.weightMedium};
+      }
     }
     .location,
     .email,

@@ -16,6 +16,12 @@ html, body {
   height: 100%;
   transition: all .3s ease;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -23,13 +29,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-image: url("https://marketifythemes.net/html/foliox//img/hero/1.jpg");
-  /* width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
   color: ${THEME.colors.white};
   cursor: auto !important;
+ 
 
 }
 

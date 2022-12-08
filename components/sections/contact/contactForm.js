@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import StyleForm from "./styleForm";
 
 const ContactForm = () => {
+  const [message, setMessage] = useState({});
+
+  const form = useRef();
+
+  const handleChange = (e) => {
+    setMessage({ ...message, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(message);
+    form.current.reset();
+  };
+
   return (
-    <StyleForm>
+    <StyleForm ref={form} onSubmit={handleSubmit}>
       <div className="display_flex">
         <div className="input_group">
           <input
@@ -12,6 +26,8 @@ const ContactForm = () => {
             name="name"
             className="name"
             placeholder="Your Name"
+            onChange={handleChange}
+            required
           />
         </div>
         <div className="input_group">
@@ -21,6 +37,8 @@ const ContactForm = () => {
             name="email"
             className="email"
             placeholder="Your Email"
+            onChange={handleChange}
+            required
           />
         </div>
         <div className="input_group">
@@ -30,6 +48,8 @@ const ContactForm = () => {
             className="phone"
             id="phone"
             placeholder="Your Phone"
+            onChange={handleChange}
+            required
           />
         </div>
         <div className="input_group">
@@ -39,6 +59,8 @@ const ContactForm = () => {
             id="subject"
             className="subject"
             placeholder="Subject"
+            onChange={handleChange}
+            required
           />
         </div>
         <div className="input_group">
@@ -47,6 +69,8 @@ const ContactForm = () => {
             name="message"
             className="message"
             placeholder="Write your message here"
+            onChange={handleChange}
+            required
           ></textarea>
         </div>
       </div>

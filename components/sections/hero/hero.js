@@ -16,7 +16,7 @@ const Hero = () => {
               Sakil <span>Ahmed</span>
             </StyledH1>
             <p className="job">Web Developer based In Bangladesh</p>
-            <Link href="#" className="btn">
+            <Link href="#contact" className="btn">
               <span>Get Connected</span>
             </Link>
           </div>
