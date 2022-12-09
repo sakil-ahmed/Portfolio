@@ -2,6 +2,7 @@ import styled from "styled-components";
 import THEME from "./../../../styles/theme";
 
 const StyleWork = styled.section`
+  padding-top: 100px;
   .portfolio_badge {
     text-align: center;
   }

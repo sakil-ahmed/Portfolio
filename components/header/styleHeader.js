@@ -30,6 +30,7 @@ const StyledHeader = styled.header`
           background-color: ${THEME.colors.headerBG};
           padding: 30px;
           transition: all 0.2s linear;
+          z-index: 10;
         }
       }
       .open_mobile_menu {
