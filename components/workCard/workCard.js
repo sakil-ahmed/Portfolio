@@ -5,7 +5,7 @@ import images from "./../../images/2.jpg";
 import Link from "next/link";
 import { StyledH5 } from "../../styles/shareStyle";
 
-const WorkCard = ({}) => {
+const WorkCard = ({ href, title, img }) => {
   return (
     <StyleWorkCard>
       <Image
@@ -15,10 +15,10 @@ const WorkCard = ({}) => {
         height="auto"
         width="auto"
       />
-      <Link className="link" href="#"></Link>
+      <Link target="_blank" className="link" href={href}></Link>
 
       <div className="card_content">
-        <StyledH5 className="card_title">Minimog</StyledH5>
+        <StyledH5 className="card_title">{title}</StyledH5>
         <h6 className="sub_title">Live Preview</h6>
       </div>
     </StyleWorkCard>

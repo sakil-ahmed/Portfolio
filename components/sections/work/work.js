@@ -16,7 +16,7 @@ const Work = () => {
         {/* Filter Link */}
         <div className="portfolio_filter">
           <ul className="filter">
-            <li className="filter_item">
+            <li className="filter_item active">
               <Link href="#" data-filter="*">
                 All
               </Link>
@@ -40,12 +40,21 @@ const Work = () => {
         </div>
         {/* Cards  */}
         <div className="portfolio_cards">
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
+          <WorkCard href="https://minimog.netlify.app/" title="Minimog" />
+          <WorkCard href="https://groverstore.netlify.app/" title="Grover" />
+          <WorkCard
+            href="https://sakilsahmed.netlify.app/"
+            title="Portfolio V2"
+          />
+          <WorkCard href="https://okario.netlify.app/" title="Okairo" />
+          <WorkCard
+            href="https://facitdashboard.netlify.app/auth-pages/login"
+            title="Facit"
+          />
+          <WorkCard
+            href="https://startbox.netlify.app/"
+            title="StartBox(only Desktop)"
+          />
         </div>
       </Container>
     </StyleWork>

@@ -13,8 +13,11 @@ const StyleContact = styled.section`
     text-align: center;
   }
   .row {
-    margin-top: 80px;
-    margin-bottom: 150px;
+    margin-top: 40px;
+
+    ${media.up("md")} {
+      margin-top: 80px;
+    }
 
     ${media.up("lg")} {
       display: flex;

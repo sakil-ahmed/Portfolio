@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import Contact from "../components/sections/contact/contact";
 import Hero from "../components/sections/hero/hero";
@@ -22,6 +23,8 @@ export default function Home() {
         <Work />
         {/* Contact Section */}
         <Contact />
+        {/* Footer Section */}
+        <Footer />
       </main>
     </>
   );
