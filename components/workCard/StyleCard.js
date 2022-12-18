@@ -7,8 +7,14 @@ const StyleWorkCard = styled.div`
   overflow: hidden;
   border-radius: 12px;
   position: relative;
+  img {
+    transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
+  }
 
   &:hover {
+    img {
+      transform: scale(1.1);
+    }
     .card_content {
       bottom: 20px;
     }
@@ -35,7 +41,7 @@ const StyleWorkCard = styled.div`
     transform: translateX(-50%);
     border-radius: 12px;
     padding: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     .card_title {
       font-weight: ${THEME.fontWeight.weightMedium};
       font-family: ${THEME.fonts.OpenSans};

@@ -30,7 +30,7 @@ const StyleForm = styled.form`
     width: 100%;
     height: 200px;
     padding: 16px 30px 30px 30px !important;
-    resize: vertical;
+    resize: none;
 
     margin-bottom: 4px;
   }

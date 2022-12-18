@@ -1,7 +1,6 @@
 import React from "react";
 import StyleWorkCard from "./StyleCard";
 import Image from "next/image";
-import images from "./../../images/2.jpg";
 import Link from "next/link";
 import { StyledH5 } from "../../styles/shareStyle";
 
@@ -10,7 +9,7 @@ const WorkCard = ({ href, title, img }) => {
     <StyleWorkCard>
       <Image
         className="card_images"
-        src={images}
+        src={img}
         alt=""
         height="auto"
         width="auto"
