@@ -5,8 +5,8 @@ import Link from "next/link";
 import LogoIcon from "./../icons/logo";
 import { FiFacebook } from "react-icons/fi";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { AiOutlineBehance } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 import MobileMenu from "./mobileMenu";
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
 
   const HandleToggle = () => setToggle((prev) => !prev);
   return (
-    <StyledHeader>
+    <StyledHeader id="header">
       <Container>
         <div className="row">
           <div className="header_logo">
@@ -40,35 +40,10 @@ const Header = () => {
                   <Link href="#">Service</Link>
                 </li>
                 <li className="nav_menu_item">
-                  <Link href="#">Portfolio</Link>
+                  <Link href="#portfolio">Portfolio</Link>
                 </li>
                 <li className="nav_menu_item">
                   <Link href="#contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
-            {/* Header Social Links */}
-            <nav>
-              <ul className="social_links">
-                <li className="link">
-                  <Link href="#">
-                    <FiFacebook />
-                  </Link>
-                </li>
-                <li className="link">
-                  <Link href="#">
-                    <AiOutlineTwitter />
-                  </Link>
-                </li>
-                <li className="link">
-                  <Link href="#">
-                    <AiOutlineBehance />
-                  </Link>
-                </li>
-                <li className="link">
-                  <Link href="#">
-                    <AiFillInstagram />
-                  </Link>
                 </li>
               </ul>
             </nav>

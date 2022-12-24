@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import THEME from "./theme";
+import media from "./Responsive";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -18,6 +19,7 @@ html, body {
   scroll-behavior: smooth;
   overflow-y: scroll;
 
+
 }
 
 ::-webkit-scrollbar {
@@ -31,6 +33,7 @@ body {
   background-image: url("https://marketifythemes.net/html/foliox//img/hero/1.jpg");
   color: ${THEME.colors.white};
   cursor: auto !important;
+
  
 
 }
@@ -56,6 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 a,button{
   cursor: pointer !important;
 }
+
 a{
   text-decoration: none;
   color: ${THEME.colors.white};
@@ -108,7 +112,31 @@ a{
  } 
 }
 
-
+.arrow__btn{
+  position: fixed;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  bottom: 100px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+  ${media.up("md")}{
+    width: 50px;
+  height: 50px;
+  }
+  svg{
+  width: 20px;
+  height: 20px;
+  margin-bottom: -4px;
+  ${media.up("md")}{
+    width: 30px;
+  height: 30px;
+  }
+  }
+}
 /* Description */
 
 .description{

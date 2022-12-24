@@ -62,38 +62,6 @@ const StyledHeader = styled.header`
           }
         }
       }
-
-      .social_links {
-        display: flex;
-        margin-left: 60px;
-        position: relative;
-        margin-bottom: -3px;
-
-        ${media.down("md")} {
-          display: none;
-        }
-
-        &::before {
-          position: absolute;
-          content: "|";
-          left: -30px;
-          top: 2;
-          color: ${THEME.colors.mainColor};
-          font-size: 16px;
-          font-family: ${THEME.fonts.OpenSans};
-        }
-
-        .link {
-          &:not(:last-child) {
-            margin-right: 12px;
-          }
-
-          a {
-            font-size: 20px;
-            line-height: 30px;
-          }
-        }
-      }
     }
   }
 `;

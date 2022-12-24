@@ -4,6 +4,10 @@ import Header from "../components/header/header";
 import Contact from "../components/sections/contact/contact";
 import Hero from "../components/sections/hero/hero";
 import Work from "../components/sections/work/work";
+import { BsArrowUp } from "react-icons/bs";
+import Link from "next/link";
+
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
@@ -26,6 +30,11 @@ export default function Home() {
         {/* Footer Section */}
         <Footer />
       </main>
+      <Link href="#header" className="btn arrow__btn">
+        <span>
+          <BsArrowUp />
+        </span>
+      </Link>
     </>
   );
 }

@@ -13,7 +13,7 @@ import start from "./../../../images/startbox.png";
 
 const Work = () => {
   return (
-    <StyleWork>
+    <StyleWork id="portfolio">
       <Container>
         <StyledH5 className="portfolio_badge">Portfolio</StyledH5>
         <StyledH2 className="portfolio_title">
