@@ -6,6 +6,7 @@ import Container from "./../../container/container";
 import StyleHero from "./styleHero";
 import avatar from "./../../../images/avatar.png";
 import { useSpring, animated, config } from "react-spring";
+import { heroData } from "../../../data/data";
 
 const calc = (x, y) => [
   (y - window.innerHeight / 2) / 40,
@@ -28,11 +29,11 @@ const Hero = () => {
         <div className="row">
           <div className="hero_left">
             <StyledH1 className="hero_title">
-              Sakil <span>Ahmed</span>
+              {heroData.name.fName} <span>{heroData.name.lName}</span>
             </StyledH1>
-            <p className="job">Web Developer based In Bangladesh</p>
+            <p className="job">{heroData.sub_title}</p>
             <Link href="#contact" className="btn">
-              <span>Get Connected</span>
+              <span>{heroData.btn_text}</span>
             </Link>
           </div>
           <div className="hero_right">
@@ -47,7 +48,7 @@ const Hero = () => {
             >
               <Image
                 className="avatar"
-                src={avatar}
+                src={heroData.img}
                 alt=""
                 width="auto"
                 height="auto"

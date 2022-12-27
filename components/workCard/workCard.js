@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { StyledH5 } from "../../styles/shareStyle";
 
-const WorkCard = ({ href, title, img }) => {
+const WorkCard = ({ data: { href, img, title } }) => {
   return (
     <StyleWorkCard>
       <Image

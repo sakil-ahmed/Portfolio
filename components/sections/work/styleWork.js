@@ -36,6 +36,7 @@ const StyleWork = styled.section`
             color: ${THEME.colors.extraText};
           }
         }
+
         &:not(:last-child) {
           margin-right: 35px;
         }
