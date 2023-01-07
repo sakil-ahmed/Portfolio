@@ -21,10 +21,16 @@ const Work = () => {
    * @param categories
    */
   const handleFilter = (categories) => {
-    const filteredData = portfolioData.card.filter(
-      (element) => element.category === categories
-    );
-    setSelectedCategory(categories === "*" ? portfolioData.card : filteredData);
+    let filteredData;
+    if (categories === "*") {
+      filteredData = portfolioData.card;
+    } else {
+      filteredData = portfolioData.card.filter(
+        (element) => element.category === categories
+      );
+    }
+
+    setSelectedCategory(filteredData);
   };
 
   return (

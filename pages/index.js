@@ -6,6 +6,7 @@ import Hero from "../components/sections/hero/hero";
 import Work from "../components/sections/work/work";
 import { BsArrowUp } from "react-icons/bs";
 import Link from "next/link";
+import Skills from "../components/sections/skills/skills";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         <Header />
         {/* Hero Section */}
         <Hero />
+        {/* Skills Section */}
+        <Skills />
         {/* Poerfolio Section */}
         <Work />
         {/* Contact Section */}
