@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import THEME from "./theme";
-import media from "./Responsive";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -15,9 +14,9 @@ const GlobalStyles = createGlobalStyle`
 
 html, body {
   height: 100%;
-  transition: all .3s ease;
+  transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  
 
 
 }
@@ -112,36 +111,24 @@ a{
  } 
 }
 
-.arrow__btn{
-  position: fixed;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  bottom: 100px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .3s ease;
-  ${media.up("md")}{
-    width: 50px;
-  height: 50px;
-  }
-  svg{
-  width: 20px;
-  height: 20px;
-  margin-bottom: -4px;
-  ${media.up("md")}{
-    width: 30px;
-  height: 30px;
-  }
-  }
-}
+
 /* Description */
 
 .description{
 font: normal ${THEME.fontWeight.weightNormal} 16px ${THEME.fonts.OpenSans};
 color: ${THEME.colors.mainColor};
+
+}
+
+/* header  */
+.header__fixed{
+  position:fixed !important;
+  background-color: #251544;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  padding: 15px 0 !important;
+  box-shadow: rgba(255, 255, 255, 0.08) 0px 4px 12px;
 
 }
 `;

@@ -64,6 +64,11 @@ const StyledHeader = styled.header`
       }
     }
   }
+  .active {
+    a {
+      color: red;
+    }
+  }
 `;
 
 export default StyledHeader;

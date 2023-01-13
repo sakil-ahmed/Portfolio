@@ -1,20 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import StyledHeader from "./styleHeader";
 import Container from "./../container/container";
 import Link from "next/link";
 import LogoIcon from "./../icons/logo";
-import { FiFacebook } from "react-icons/fi";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
 import MobileMenu from "./mobileMenu";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  /* A hook that allows you to use state in a functional component. */
   const [toggle, setToggle] = useState(false);
+  const [scroll, setScroll] = useState();
 
+  /**
+   * It toggles the value of the variable toggle.
+   */
   const HandleToggle = () => setToggle((prev) => !prev);
+
+  /**
+   * When the component mounts, add an event listener to the window that calls the handleScroll function
+   * when the window is scrolled.
+   */
+  const handleScroll = () => {
+    setScroll(window.scrollY >= 200);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+  }, []);
+
   return (
-    <StyledHeader id="header">
+    <StyledHeader className={scroll ? "header__fixed" : ""} id="header">
       <Container>
         <div className="row">
           <div className="header_logo">
