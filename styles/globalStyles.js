@@ -129,8 +129,13 @@ color: ${THEME.colors.mainColor};
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   padding: 15px 0 !important;
   box-shadow: rgba(255, 255, 255, 0.08) 0px 4px 12px;
-
+  animation: header .3s ease-in-out;
 }
+@keyframes header {
+  from {top: -100px;}
+  to {top: 0;}
+}
+
 `;
 
 export default GlobalStyles;

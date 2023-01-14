@@ -27,14 +27,12 @@ const StyleWork = styled.section`
       justify-content: center;
       flex-wrap: wrap;
       &_item {
-        a {
-          color: ${THEME.colors.white};
-          font-weight: ${THEME.fontWeight.weightMedium};
-          font-family: ${THEME.fonts.OpenSans};
-          transition: all 0.3s ease-in-out;
-          &:hover {
-            color: ${THEME.colors.extraText};
-          }
+        color: ${THEME.colors.white};
+        font-weight: ${THEME.fontWeight.weightMedium};
+        font-family: ${THEME.fonts.OpenSans};
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: ${THEME.colors.extraText};
         }
 
         &:not(:last-child) {
@@ -42,9 +40,7 @@ const StyleWork = styled.section`
         }
       }
       .active {
-        a {
-          color: ${THEME.colors.extraText};
-        }
+        color: ${THEME.colors.extraText};
       }
     }
   }

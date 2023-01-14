@@ -25,11 +25,13 @@ const Header = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-  }, []);
+    window.addEventListener("scroll", handleScroll);
 
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const headerClass = scroll ? "header__fixed" : "";
   return (
-    <StyledHeader className={scroll ? "header__fixed" : ""} id="header">
+    <StyledHeader className={headerClass} id="header">
       <Container>
         <div className="row">
           <div className="header_logo">

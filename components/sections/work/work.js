@@ -60,7 +60,7 @@ const Work = () => {
                     }}
                     data-filter={categories}
                   >
-                    <Link href="#">{text}</Link>
+                    {text}
                   </li>
                 );
               }
