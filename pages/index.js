@@ -6,6 +6,7 @@ import Hero from "../components/sections/hero/hero";
 import Work from "../components/sections/work/work";
 import Skills from "../components/sections/skills/skills";
 
+
 export default function Home() {
   return (
     <>

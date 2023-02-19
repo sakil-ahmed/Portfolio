@@ -4,7 +4,6 @@ import Container from "./../container/container";
 import Link from "next/link";
 import LogoIcon from "./../icons/logo";
 import MobileMenu from "./mobileMenu";
-import { useRouter } from "next/router";
 
 const Header = () => {
   /* A hook that allows you to use state in a functional component. */

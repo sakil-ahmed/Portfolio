@@ -16,6 +16,7 @@ html, body {
   height: 100%;
   transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
   scroll-behavior: smooth;
+  overflow-y: scroll;
   
 
 
